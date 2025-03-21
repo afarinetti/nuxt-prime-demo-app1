@@ -1,36 +1,38 @@
-import type { Config } from "prettier";
+import type { Config } from 'prettier';
 
-export const config: Config = {
+const config: Config = {
   printWidth: 120,
   semi: true,
   singleQuote: true,
-  trailingComma: "all",
-  plugins: ["@ianvs/prettier-plugin-sort-imports"],
+  trailingComma: 'all',
+  plugins: ['@ianvs/prettier-plugin-sort-imports'],
   importOrder: [
-    ".*styles.css$",
-    "",
-    "dayjs",
-    "^vue$",
-    "^nuxt$",
-    "^@nuxt$",
-    "^nuxt/.*$",
-    "^@nuxt/.*$",
-    "<BUILTIN_MODULES>",
-    "<THIRD_PARTY_MODULES>",
-    "^@primevue/(.*)$",
-    "^@primeuix/(.*)$",
-    "^@docs/(.*)$",
-    "^@/.*$",
-    "^../(?!.*.css$).*$",
-    "^./(?!.*.css$).*$",
-    "\\.css$",
+    '.*styles.css$',
+    '',
+    'dayjs',
+    '^vue$',
+    '^nuxt$',
+    '^@nuxt$',
+    '^nuxt/.*$',
+    '^@nuxt/.*$',
+    '<BUILTIN_MODULES>',
+    '<THIRD_PARTY_MODULES>',
+    '^@primevue/(.*)$',
+    '^@primeuix/(.*)$',
+    '^@docs/(.*)$',
+    '^@/.*$',
+    '^../(?!.*.css$).*$',
+    '^./(?!.*.css$).*$',
+    '\\.css$',
   ],
   overrides: [
     {
-      files: "*.mdx",
+      files: '*.mdx',
       options: {
         printWidth: 70,
       },
     },
   ],
 };
+
+export default config;

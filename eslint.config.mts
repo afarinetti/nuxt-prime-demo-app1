@@ -1,10 +1,6 @@
-import { withNuxt } from "./.nuxt/eslint.config.mjs";
-import eslintConfigPrettier from "eslint-config-prettier/flat";
-
-import {
-  defineConfigWithVueTs,
-  vueTsConfigs,
-} from "@vue/eslint-config-typescript";
+import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript';
+import eslintConfigPrettier from 'eslint-config-prettier/flat';
+import { withNuxt } from './.nuxt/eslint.config.mjs';
 
 const vueTsConfig = defineConfigWithVueTs([
   vueTsConfigs.strictTypeChecked,

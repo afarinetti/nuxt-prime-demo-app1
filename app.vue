@@ -7,11 +7,11 @@
 </template>
 
 <script setup lang="ts">
-import "primeicons/primeicons.css";
+import 'primeicons/primeicons.css';
 
 useHead({
   htmlAttrs: {
-    class: "dark-mode",
+    class: 'dark-mode',
   },
 });
 </script>
