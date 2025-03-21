@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "nuxt-prime-app1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -7,14 +7,42 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "prettier:check": "prettier --check \"**/*.{ts,tsx}\"",
+    "prettier:write": "prettier --write \"**/*.{ts,tsx}\""
   },
   "dependencies": {
-    "@nuxt/eslint": "1.2.0",
-    "eslint": "^9.0.0",
+    "@nuxt/fonts": "0.11.0",
+    "@primeuix/themes": "^1.0.0",
+    "@primevue/forms": "^4.3.2",
+    "@vueuse/core": "^13.0.0",
+    "@vueuse/nuxt": "13.0.0",
     "nuxt": "^3.16.0",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.3.2",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
-  "packageManager": "pnpm@10.6.2+sha512.47870716bea1572b53df34ad8647b42962bc790ce2bf4562ba0f643237d7302a3d6a8ecef9e4bdfc01d23af1969aa90485d4cebb0b9638fa5ef1daef656f6c1b"
+  "packageManager": "pnpm@10.6.2+sha512.47870716bea1572b53df34ad8647b42962bc790ce2bf4562ba0f643237d7302a3d6a8ecef9e4bdfc01d23af1969aa90485d4cebb0b9638fa5ef1daef656f6c1b",
+  "devDependencies": {
+    "@eslint/compat": "^1.2.7",
+    "@eslint/js": "^9.22.0",
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@nuxt/eslint": "1.2.0",
+    "@nuxt/eslint-config": "^1.2.0",
+    "@nuxt/eslint-plugin": "^1.2.0",
+    "@primevue/nuxt-module": "^4.3.2",
+    "@vue/eslint-config-typescript": "^14.5.0",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "jiti": "^2.4.2",
+    "prettier": "^3.5.3",
+    "prettier-eslint": "^16.3.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1"
+  }
 }
