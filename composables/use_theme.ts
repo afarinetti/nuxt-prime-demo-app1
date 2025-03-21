@@ -1,3 +1,5 @@
+import { PrimeIcons } from '@primevue/core/api';
+
 export const useTheme = () => {
   const isDark = useDark({
     selector: 'html',
@@ -7,5 +9,9 @@ export const useTheme = () => {
   });
   const toggleDark = useToggle(isDark);
 
-  return { isDark, toggleDark };
+  const themeIcon = computed<string>(() => {
+    return isDark.value ? PrimeIcons.MOON : PrimeIcons.SUN;
+  });
+
+  return { isDark, toggleDark, themeIcon };
 };

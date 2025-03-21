@@ -1,13 +1,17 @@
 import type { Config } from 'prettier';
 
 const config: Config = {
-  printWidth: 120,
+  // customizations
+  printWidth: 80,
   semi: true,
   singleQuote: true,
   trailingComma: 'all',
+  bracketSameLine: false,
+  vueIndentScriptAndStyle: true,
+  singleAttributePerLine: true,
+  // plugins
   plugins: ['@ianvs/prettier-plugin-sort-imports'],
   importOrder: [
-    '.*styles.css$',
     '',
     'dayjs',
     '^vue$',
@@ -25,6 +29,7 @@ const config: Config = {
     '^./(?!.*.css$).*$',
     '\\.css$',
   ],
+  // overrides
   overrides: [
     {
       files: '*.mdx',
