@@ -15,7 +15,7 @@
       lang: 'en-US',
       // class: ['dark-mode'],
     },
-    link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   });
 </script>
 
